@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Melissa Benzidane</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .sidebar {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2e7d32;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+        }
+
+        .main-content {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #1b5e20;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #4caf50;
+            margin-bottom: 40px;
+        }
+
+        .content-section {
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        .content-section h2 {
+            color: #2e7d32;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .content-section p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                writing-mode: horizontal-tb;
+                font-size: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            Melissa Benzidane
+        </div>
+        
+        <div class="main-content">
+            <h1>Système d'Information</h1>
+            <div class="subtitle">Portfolio Professionnel</div>
+            
+            <div class="content-section">
+                <h2>À propos</h2>
+                <p>Bienvenue sur mon portfolio dédié aux systèmes d'information.</p>
+                
+                <h2>Compétences</h2>
+                <p>Gestion de bases de données, analyse des systèmes, architecture informatique.</p>
+                
+                <h2>Contact</h2>
+                <p>N'hésitez pas à me contacter pour toute collaboration ou projet.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
